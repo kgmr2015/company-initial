@@ -1,0 +1,7 @@
+--- 
+applications: 
+  - 
+    buildpack: "https://github.com/ cloudfoundry/java-buildpack.git"
+    instances: 1
+    memory: 1G
+    name: company
