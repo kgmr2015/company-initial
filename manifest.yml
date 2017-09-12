@@ -1,7 +1,11 @@
 --- 
 applications: 
   - 
-    buildpack: "https://github.com/ cloudfoundry/java-buildpack.git"
+    buildpack: java-buildpack
     instances: 1
     memory: 1G
     name: company
+    env:
+      SPRING_PROFILES_ACTIVE: dev
+    services:
+    - mydb
